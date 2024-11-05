@@ -1,0 +1,36 @@
+//    ViewResolver: ánh xạ tên của view sang view đối tượng tương ứng
+//    ViewResolver quyết định FrontController trả về view nào
+
+// RequestParam:  dùng để lấy dữ liệu từ các tham số của chuỗi truy vấn (query string) trong URL
+// hoặc từ các trường của biểu mẫu (form) gửi lên qua HTTP request.
+
+// PathVariable: lấy các giá trị trực tiếp từ đường dẫn URL (path) và ánh xạ chúng vào tham số của phương thức trong controller
+
+// ModelAttribute: tự động ánh xạ dữ liệu từ một biểu mẫu (form) hoặc dữ liệu đầu vào khác thành một đối tượng Java.
+// Nó lấy các giá trị từ request và gán cho các thuộc tính tương ứng của đối tượng.
+
+/*
+Data binding
+- Là cơ chế liên kết dữ liệu đầu vào đầu ra với các đối tượng model
+- Giúp cho việc tương tác với dữ liệu trở nên dễ dàng
+- Các form đều được liên kết với 1 đối tượng biểu diễn dữ liệu ở phía sau
+- Khi tương tác với form, dữ liệu trên form sẽ được tự động chuyển đổi thành các thuộc tính của đối tượng liên kết với nó
+- Hỗ trợ chuyển đổi dữ liệu và validate dữ liệu
+- DataBinding trong Spring hoạt động dựa trên DataBinder
+ */
+
+/*
+MultipartFile
+Đại diện cho 1 file được Upload lên
+Một số phương thức
+- getOriginalFileName(): trả về tên file
+- getInputStream: trả về input stream để thao tác với file
+- getSize: Trả về kích thước của file
+- transferTo: chuyển File vừa upload đến 1 vị trí nhất định
+ */
+
+/*
+Upload File
+- addResourceHandlers: đăng ký tài nguyên đường dẫn và tạo đường dẫn tĩnh cho file trong dự án
+- getResolver: cho phép gử nhận file và giới hạn kích thước file
+ */
